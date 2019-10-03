@@ -7,7 +7,7 @@ cache: npm
 # 指定博客的仓库地址
 env:
  global:
-   - GH_REF: git@github.com:leiz2192/leiz2192.github.io.git
+   - GH_REF: github.com/leiz2192/leiz2192.github.io.git
 
 branches:
   only:
