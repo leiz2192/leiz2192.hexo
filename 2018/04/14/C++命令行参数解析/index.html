@@ -55,17 +55,17 @@
   };
 </script>
 
-  <meta name="description" content="1 Linux在Linux环境可以使用getopt解析命令行参数. 1.1 mainmain()函数声明: 1int main(int argc, char *argv[]);  从命令行传递给程序main()函数的包含两个部分的内容, argc 参数包含参数的计数值，而 argv 包含指向这些参数的指针数组. 1.2 getopt函数getopt位于unistd.h系统头文件中. Windows">
+  <meta name="description" content="1 Linux在Linux环境可以使用getopt解析命令行参数. 1.1 mainmain()函数声明: 1int main(int argc, char *argv[]);  从命令行传递给程序main()函数的包含两个部分的内容, argc 参数包含参数的计数值，而 argv 包含指向这些参数的指针数组.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++命令行参数解析">
 <meta property="og:url" content="http://yoursite.com/2018/04/14/C++命令行参数解析/index.html">
 <meta property="og:site_name" content="LazyStones">
-<meta property="og:description" content="1 Linux在Linux环境可以使用getopt解析命令行参数. 1.1 mainmain()函数声明: 1int main(int argc, char *argv[]);  从命令行传递给程序main()函数的包含两个部分的内容, argc 参数包含参数的计数值，而 argv 包含指向这些参数的指针数组. 1.2 getopt函数getopt位于unistd.h系统头文件中. Windows">
+<meta property="og:description" content="1 Linux在Linux环境可以使用getopt解析命令行参数. 1.1 mainmain()函数声明: 1int main(int argc, char *argv[]);  从命令行传递给程序main()函数的包含两个部分的内容, argc 参数包含参数的计数值，而 argv 包含指向这些参数的指针数组.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-03T17:02:22.737Z">
+<meta property="og:updated_time" content="2019-10-03T17:55:38.481Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++命令行参数解析">
-<meta name="twitter:description" content="1 Linux在Linux环境可以使用getopt解析命令行参数. 1.1 mainmain()函数声明: 1int main(int argc, char *argv[]);  从命令行传递给程序main()函数的包含两个部分的内容, argc 参数包含参数的计数值，而 argv 包含指向这些参数的指针数组. 1.2 getopt函数getopt位于unistd.h系统头文件中. Windows">
+<meta name="twitter:description" content="1 Linux在Linux环境可以使用getopt解析命令行参数. 1.1 mainmain()函数声明: 1int main(int argc, char *argv[]);  从命令行传递给程序main()函数的包含两个部分的内容, argc 参数包含参数的计数值，而 argv 包含指向这些参数的指针数组.">
   <link rel="canonical" href="http://yoursite.com/2018/04/14/C++命令行参数解析/">
 
 
@@ -245,7 +245,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-10-03 17:02:22" itemprop="dateModified" datetime="2019-10-03T17:02:22+00:00">2019-10-03</time>
+                <time title="Modified: 2019-10-03 17:55:38" itemprop="dateModified" datetime="2019-10-03T17:55:38+00:00">2019-10-03</time>
               </span>
             
           
@@ -274,6 +274,8 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span></span>;</span><br></pre></td></tr></table></figure>
 
 <p>从命令行传递给程序main()函数的包含两个部分的内容, argc 参数包含参数的计数值，而 argv 包含指向这些参数的指针数组.</p>
+<a id="more"></a>
+
 <h2 id="1-2-getopt"><a href="#1-2-getopt" class="headerlink" title="1.2 getopt"></a>1.2 getopt</h2><p>函数getopt位于unistd.h系统头文件中. Windows 没有这个头文件, 所有建议在Linux中使用.</p>
 <p>getopt原型</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">getopt</span><span class="params">( <span class="keyword">int</span> argc, <span class="keyword">char</span> *<span class="keyword">const</span> argv[], <span class="keyword">const</span> <span class="keyword">char</span> *optstring )</span></span>;</span><br></pre></td></tr></table></figure>
