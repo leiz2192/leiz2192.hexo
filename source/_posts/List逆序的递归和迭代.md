@@ -1,8 +1,13 @@
 ---
 title: List逆序的递归和迭代
-tags: []
-originContent: |-
-  ```c++
+date: 2019-10-01 23:24:24
+tags:
+---
+
+List的逆序可以有递归和迭代两种方法, 这两种方法的C++实现如下.
+<!--more-->
+
+```c++
   #include <iostream>
 
   struct Node {
