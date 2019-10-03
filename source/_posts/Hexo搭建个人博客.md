@@ -14,6 +14,7 @@ tags:
 ```
 $ npm install hexo-cli -g
 ```
+<!--more-->
 # 创建本地博客
 ```
 $ hexo init leiz2192.github.io       //leiz2192.github.io是项目名
@@ -26,7 +27,7 @@ $ hexo s   //s是server的缩写，启动服务, 通过http://localhost:4000/本
 
 # 发布博客
 ```
-npm install hexo-deployer-git —save //安装部署插件
+npm install hexo-deployer-git --save //安装部署插件
 ```
 
 ```

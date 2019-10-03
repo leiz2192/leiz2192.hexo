@@ -77,5 +77,8 @@ theme: next.copy
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+#https://github.com/leiz2192/leiz2192.github.io.git
 deploy:
-  type:
+  type: git
+  repo: git@github.com:leiz2192/leiz2192.github.io.git
+  branch: master
