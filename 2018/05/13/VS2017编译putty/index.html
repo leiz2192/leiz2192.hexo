@@ -62,7 +62,7 @@
 <meta property="og:site_name" content="LazyStones">
 <meta property="og:description" content="VS2017编译putty下载putty从putty中选择”Unix source archive”下载 加载工程源码下载后, 解压, 双击”windows\MSVC\putty\putty.dsp”, VS2017加载工程 修改工程属性按如下设置VS2017工程属性.此设置是为了解决问题: 错误 D8016 “/ZI”和“/Gy-”命令行选项不兼容 12“项目”—&amp;gt;“属性”—&amp;gt;“C/">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-03T16:46:57.751Z">
+<meta property="og:updated_time" content="2019-10-03T16:54:38.234Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VS2017编译putty">
 <meta name="twitter:description" content="VS2017编译putty下载putty从putty中选择”Unix source archive”下载 加载工程源码下载后, 解压, 双击”windows\MSVC\putty\putty.dsp”, VS2017加载工程 修改工程属性按如下设置VS2017工程属性.此设置是为了解决问题: 错误 D8016 “/ZI”和“/Gy-”命令行选项不兼容 12“项目”—&amp;gt;“属性”—&amp;gt;“C/">
@@ -245,7 +245,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-10-03 16:46:57" itemprop="dateModified" datetime="2019-10-03T16:46:57+00:00">2019-10-03</time>
+                <time title="Modified: 2019-10-03 16:54:38" itemprop="dateModified" datetime="2019-10-03T16:54:38+00:00">2019-10-03</time>
               </span>
             
           
@@ -273,6 +273,8 @@
 <h2 id="加载工程"><a href="#加载工程" class="headerlink" title="加载工程"></a>加载工程</h2><p>源码下载后, 解压, 双击”windows\MSVC\putty\putty.dsp”, VS2017加载工程</p>
 <h2 id="修改工程属性"><a href="#修改工程属性" class="headerlink" title="修改工程属性"></a>修改工程属性</h2><p>按如下设置VS2017工程属性.<br>此设置是为了解决问题: 错误 D8016 “/ZI”和“/Gy-”命令行选项不兼容</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">“项目”—&gt;“属性”—&gt;“C/C++”—&gt;“常规”—&gt;“调试信息格式”—&gt;选择“程序数据库(/Zi)”或“无”</span><br><span class="line">“项目”—&gt;“属性”—&gt;“C/C++”—&gt;“代码生成”—&gt;“启用函数集链接”—&gt;选择“是 (/Gy)”</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
 
 <h2 id="修改代码"><a href="#修改代码" class="headerlink" title="修改代码"></a>修改代码</h2><p>1) 修改windows\version.rc2<br>修改前后分别如下, 解决version.rc2 cannot open include file ‘version.h’ 的问题</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;version.h&quot;</span><br><span class="line">#include &quot;licence.h&quot;</span><br></pre></td></tr></table></figure>
