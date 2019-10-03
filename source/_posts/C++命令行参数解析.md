@@ -17,6 +17,8 @@ int main(int argc, char *argv[]);
 
 从命令行传递给程序main()函数的包含两个部分的内容, argc 参数包含参数的计数值，而 argv 包含指向这些参数的指针数组.
 
+<!--more-->
+
 ## 1.2 getopt
 
 函数getopt位于unistd.h系统头文件中. Windows 没有这个头文件, 所有建议在Linux中使用.
