@@ -1,7 +1,8 @@
 ---
 title: VS2017编译putty
 date: 2018-05-13 22:00:29
-tags:
+tags: c++
+categories: c++
 ---
 
 # VS2017编译putty

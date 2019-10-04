@@ -1,7 +1,8 @@
 ---
 title: cout的格式化
 date: 2019-10-04 20:24:14
-tags:
+tags: c++
+categories: c++
 ---
 STL cout的格式化收集整理如下, 以便查阅.
 # 一、综述

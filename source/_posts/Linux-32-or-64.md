@@ -1,7 +1,8 @@
 ---
 title: Linux 32 or 64
 date: 2018-05-13 22:03:57
-tags:
+tags: linux
+categories: linux
 ---
 
 查看linux是32位还是64位方法

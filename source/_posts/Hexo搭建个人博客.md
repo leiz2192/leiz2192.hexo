@@ -1,7 +1,8 @@
 ---
 title: Hexo搭建个人博客
 date: 2018-05-13 21:51:31
-tags:
+tags: hexo
+categories: 
 ---
 
 # 准备工作

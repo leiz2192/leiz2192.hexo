@@ -1,7 +1,8 @@
 ---
 title: 安装deb和rpm文件
 date: 2018-04-14 22:51:46
-tags:
+tags: linux
+categories: linux
 ---
 
 # 介绍

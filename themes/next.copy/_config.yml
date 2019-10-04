@@ -127,9 +127,9 @@ scheme: Mist
 menu:
   home: / || home
   archives: /archives/ || archive
+  tags: /tags/ || tags
+  categories: /categories/ || th
   about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -383,9 +383,9 @@ codeblock:
   highlight_theme: normal
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result.
-    show_result: false
+    show_result: true
     # Available values: default | flat | mac
     style:
 

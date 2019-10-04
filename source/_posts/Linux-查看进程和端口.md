@@ -1,7 +1,8 @@
 ---
 title: Linux查看进程和端口
 date: 2018-04-14 19:21:13
-tags:
+tags: linux
+categories: linux
 ---
 
 # Linux 查看进程和端口

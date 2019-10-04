@@ -1,7 +1,8 @@
 ---
 title: C++命令行参数解析
 date: 2018-04-14 22:51:46
-tags:
+tags: c++
+categories: c++
 ---
 # 1 Linux
 

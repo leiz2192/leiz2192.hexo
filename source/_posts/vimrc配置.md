@@ -1,10 +1,14 @@
 ---
 title: vimrc配置
 date: 2018-04-14 22:35:53
-tags:
+tags: shell
+categories: linux
 ---
 
- ```shell
+以下是收集整理个人使用的.vimrc文件配置.
+<!--more-->
+
+```shell
 set nocompatible " 关闭 vi 兼容模式
 syntax on " 自动语法高亮
 colorscheme desert " 设定配色方案
@@ -50,6 +54,4 @@ set encoding=utf-8
 set paste
 noremap <Space> *N
 noremap <C-\> :q!<CR>
- ```
-
-以上是收集整理个人使用的.vimrc文件配置.
+```

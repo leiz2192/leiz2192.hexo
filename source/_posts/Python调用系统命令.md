@@ -1,7 +1,7 @@
 ---
 title: Python调用系统命令
 date: 2019-10-04 17:55:55
-tags:
+tags: python
 ---
 # 1. os.system
 该方法在调用完shell脚本后,返回一个16位的二进制数.
