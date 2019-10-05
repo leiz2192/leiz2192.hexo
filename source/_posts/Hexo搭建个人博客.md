@@ -14,7 +14,7 @@ categories:
 $ npm install hexo-cli -g
 ```
 <!--more-->
-# 创建本地博客
+# 创建博客
 ```bash
 $ hexo init leiz2192.hexo
 $ cd leiz2192.hexo
@@ -62,4 +62,83 @@ hexo d -g  //生成网页并发布到GitHub
 hexo d -g
 
 exit 0
+```
+
+# 修饰博客
+
+## about
+新建about page
+```bash
+$ hexo new page "about"
+```
+修改theme的`_config.yml`, 去注释`menu`中的`about`.
+```yaml
+menu:
+  ......
+  about: /about/ || user
+```
+然后修改`source/about/index.md`文件即可.
+
+## tags
+新建tags page
+```bash
+$ hexo new page "tags"
+```
+修改theme的`_config.yml`, 去注释`menu`中的`tags`.
+```yaml
+menu:
+  ......
+  tags: /tags/ || tags
+```
+然后修改`source/tags/index.md`文件, 增加`type: "tags"`
+```
+---
+title: tags
+date: 2019-10-04 23:11:52
+type: "tags"
+---
+```
+
+## categories
+新建categories page
+```bash
+$ hexo new page "categories"
+```
+修改theme的`_config.yml`, 去注释`menu`中的`categories`.
+```yaml
+menu:
+  ......
+  categories: /categories/ || th
+```
+然后修改`source/categories/index.md`文件, 增加`type: "categories"`
+```
+---
+title: categories
+date: 2019-10-04 23:15:38
+type: "categories"
+---
+```
+
+## search
+安装插件
+```bash
+$ npm install hexo-generator-searchdb --save
+```
+修改站点的配置文件`_config.yml`, 增加以下内容.
+```yaml
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+```
+修改theme的`_config.yml`, 修改`local_search`的`enable`为**true**.
+```yaml
+local_search:
+  enable: true
+```
+清理缓存后发布.
+```bash
+$ hexo clean
+$ hexo d -g
 ```
