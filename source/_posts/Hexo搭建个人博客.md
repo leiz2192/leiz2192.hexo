@@ -62,7 +62,7 @@ repo建议使用ssh方式地址, https方式在部署时会需要输入用户名
 hexo d -g  //生成网页并发布到GitHub
 ```
 
-然后就可以访问 **https://leiz2192.github.io/** 查看博客了.
+然后就可以访问[博客](https://leiz2192.github.io/).
 
 ## 维护博客
 
