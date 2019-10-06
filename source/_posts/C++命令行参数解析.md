@@ -4,11 +4,12 @@ date: 2018-04-14 22:51:46
 tags: c++
 categories: c++
 ---
-# 1 Linux
+
+## Linux
 
 在Linux环境可以使用getopt解析命令行参数.
 
-## 1.1 main
+### main
 
 main()函数声明:
 
@@ -20,7 +21,7 @@ int main(int argc, char *argv[]);
 
 <!--more-->
 
-## 1.2 getopt
+### getopt
 
 函数getopt位于unistd.h系统头文件中. Windows 没有这个头文件, 所有建议在Linux中使用.
 
@@ -42,15 +43,14 @@ getopt() 所设置的全局变量包括：
 
 可以重复调用 getopt()，直到其返回 -1 为止；任何剩下的命令行参数通常视为文件名或程序相应的其他内容。
 
-## 1.3 示例
+### 示例
 
 ```c++
 #include <unistd.h>
 #include <string>
 #include <stdio.h>
- 
-int main(int argc, char* argv[])
-{
+
+int main(int argc, char* argv[]) {
   std::string file_name;
   int c = 0;
   bool s_internal = false;
@@ -77,22 +77,22 @@ int main(int argc, char* argv[])
         throw "option invalid";
     }
   }
-   
+
   return 0;
 }
 ```
-# 2 Windows
+
+## Windows
 
 在Windows可以使用的Boost.Program_options库解析命令行参数.
 
-## 2.1 示例
+### 示例
 
 ```c++
 #include <iostream>
 #include <boost/program_options.hpp>
- 
-int main(int argc, char *argv[])
-{
+
+int main(int argc, char *argv[]) {
     try {
         namespace po = boost::program_options;
         po::options_description desc("Allowed options");
@@ -100,16 +100,16 @@ int main(int argc, char *argv[])
             ("xml_to_xls,x", po::value<std::string>(), "from_xml_to_xls")
             ("xls_to_xml,s", po::value<std::string>(), "from_xls_to_xml")
             ("out,o", po::value<std::string>(), "assign output file name");
- 
+
         po::variables_map vm;
         po::store(parse_command_line(argc, argv, desc), vm);
         po::notify(vm);
- 
+
         std::string out_file;
         if (vm.count("out")) {
             out_file = vm["out"].as<std::string>();
         }
- 
+
         if (vm.count("xml_to_xls")) {
             from_xml_to_xls(vm["xml_to_xls"].as<std::string>(), out_file);
         }
@@ -126,12 +126,12 @@ int main(int argc, char *argv[])
     } catch (...) {
         std::cout << "Unkown exception\n";
     }
- 
+
     return 0;
 }
 ```
 
-## 2.2 组件
+### 组件
 
 program_options的使用主要通过下面三个组件完成：
 
@@ -141,22 +141,16 @@ program_options的使用主要通过下面三个组件完成：
 | parse_command_line(选项分析器)  | 解析由命令行输入的参数       |
 | variables_map(选项存储器)       | 容器,用于存储解析后的选项    |
 
-## 2.3 流程
+### 流程
 
-```flow
-st=>start: Start
-ed=>end: End
-op1=>operation: 构造option_description对象和variables_map对象
-op2=>operation: add_options(): 向option_description对象添加选项
-op3=>operation: parse_command_line(): 将命令行输入的参数解析出来
-op4=>operation: store(): 将解析出的选项存储至variables_map中
-op5=>operation: notify(): 通知variables_map去更新所有的外部变量
-op6=>operation: count(): 检测某个选项是否被输入
-op7=>operation: operator[]: 取出选项的值
-st->op1->op2->op3->op4->op5->op6->op7->ed
+- 构造option_description对象和variables_map对象
+- add_options(): 向option_description对象添加选项
+- parse_command_line(): 将命令行输入的参数解析出来
+- store(): 将解析出的选项存储至variables_map中
+- notify(): 通知variables_map去更新所有的外部变量
+- count(): 检测某个选项是否被输入
+- operator[]: 取出选项的值
 
-```
-
-## 2.4 下载
+### 下载
 
 Boost已经提供了编译好的Visual Studio版本, 可以直接[下载](https://dl.bintray.com/boostorg/release/1.65.1/binaries/)使用.

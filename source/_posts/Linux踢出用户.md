@@ -5,8 +5,8 @@ tags: linux
 categories: linux
 ---
 
-# Linux踢出用户
 ## 查看当前登录用户
+
 ```shell
 $ whatis w  
 w                    (1)  - Show who is logged on and what they are doing  
@@ -20,6 +20,7 @@ wilsh    pts/2    192.168.105.188  09:41    0.00s  0.00s  0.00s w
 ```
 
 ## pkill 踢出用户
+
 ```shell
 $ whatis pkill  
 pkill [pgrep]        (1)  - look up or signal processes based on name and other attributes  
@@ -28,13 +29,15 @@ pkill [pgrep]        (1)  - look up or signal processes based on name and other 
 ```shell
 pkill -kill -t pts/2
 ```
+
 ```shell
 pkill -9 -u wilsh
 ```
 
 ## fuser 踢出用户
+
 ```shell
-$ whatis fuser        
+$ whatis fuser
 fuser (1)            - identify processes using files or sockets
 ```
 
