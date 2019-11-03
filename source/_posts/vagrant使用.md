@@ -2,7 +2,7 @@
 title: Vagrant使用
 date: 2019-10-07 22:16:32
 tags: vagrant
-categories: 工程
+categories: 工具
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: Linux踢出用户
 date: 2018-05-19 22:56:57
-tags: linux
+tags: shell
 categories: linux
 ---
 

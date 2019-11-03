@@ -2,7 +2,7 @@
 title: Vagrant box保存路径修改
 date: 2019-10-07 21:57:12
 tags: vagrant
-categories:  工程
+categories:  工具
 ---
 
 vagrant add box时默认保存在目录`~/.vagrant.d`. 可以通过设置`VAGRANT_HOME`环境变量改变默认位置.

@@ -1,7 +1,7 @@
 ---
 title: Linux 32 or 64
 date: 2018-05-13 22:03:57
-tags: linux
+tags: shell
 categories: linux
 ---
 
