@@ -1,7 +1,7 @@
 ---
 title: CAP定理
 date: 2019-10-04 23:48:10
-tags: 算法
+tags: 数据库
 categories: 架构
 ---
 在计算机科学中, CAP定理（CAP theorem）, 又被称作 布鲁尔定理（Brewer's theorem）, 它指出对于一个分布式计算系统来说，不可能同时满足以下三点:
