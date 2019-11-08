@@ -2,7 +2,7 @@
 title: Hexo搭建个人博客
 date: 2018-05-13 21:51:31
 tags: hexo
-categories: 
+categories: 工具
 ---
 
 ## 准备工作
