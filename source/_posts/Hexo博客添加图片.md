@@ -13,6 +13,7 @@ categories: 工具
 - 安装插件: `npm install hexo-asset-image --save`.
 - 生成博客: 运行`hexo n "your-title"`, 生成`your-title.md`博文时就会在`/source/_posts`目录下生成`your-title`的文件夹, 将你想在`your-title`博文中插入的照片放置到这个同名文件夹中即可, 图片的命名随意.
 - 添加图片: 在需要添加图片的位置写入图片的链接地址: `![your-image-desc](your-image-name.your-image-format)`.
+
 <!--more-->
 
 另外一种图片存放路径是`source/images`. 但此时访问图片的方式是`![your-image-desc](/images/your-image-name.your-image-format)`
