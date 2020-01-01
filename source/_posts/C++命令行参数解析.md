@@ -43,7 +43,7 @@ getopt() 所设置的全局变量包括：
 
 可以重复调用 getopt()，直到其返回 -1 为止；任何剩下的命令行参数通常视为文件名或程序相应的其他内容。
 
-### 示例
+### 示例1
 
 ```c++
 #include <unistd.h>
@@ -86,7 +86,7 @@ int main(int argc, char* argv[]) {
 
 在Windows可以使用的Boost.Program_options库解析命令行参数.
 
-### 示例
+### 示例2
 
 ```c++
 #include <iostream>
