@@ -1,5 +1,5 @@
 @import '../Pisces/_layout';
-@import '../Pisces/_brand';
+@import '../Pisces/_header';
 @import '../Pisces/_menu';
 @import '../Pisces/_sub-menu';
 @import '../Pisces/_sidebar';
@@ -35,15 +35,13 @@ $use-seo = hexo-config('seo');
 
 // Post & Comments blocks.
 .post-block {
-  background: white;
+  background: var(--content-bg-color);
   border-radius: $border-radius-inner;
   box-shadow: $box-shadow-inner;
   padding: $content-desktop-padding;
-}
 
-// When blocks are siblings (homepage).
-#posts > article + article {
-  .post-block {
+  // When blocks are siblings (homepage).
+  & + .post-block {
     border-radius: $border-radius;
     // Rewrite shadows & borders because all blocks have offsets.
     box-shadow: $box-shadow;
@@ -53,10 +51,9 @@ $use-seo = hexo-config('seo');
 
 // Comments blocks.
 .comments {
-  background: white;
+  background: var(--content-bg-color);
   border-radius: $border-radius;
   box-shadow: $box-shadow;
-  margin: auto;
   margin-top: $sidebar-offset;
   padding: $content-desktop-padding;
 }
@@ -66,17 +63,8 @@ $use-seo = hexo-config('seo');
 }
 
 // Top main padding from header to posts (default 40px).
-.posts-expand {
+.content {
   padding-top: initial;
-}
-
-// Post navigation items.
-.post-nav-divider {
-  width: 4%;
-}
-
-.post-nav-item {
-  width: 48%;
 }
 
 // Post delimiters.
@@ -91,7 +79,7 @@ $use-seo = hexo-config('seo');
     top: initial;
   }
 
-  background: white;
+  background: var(--content-bg-color);
   border-radius: $border-radius;
   border-top: initial;
   box-shadow: $box-shadow;
@@ -114,18 +102,16 @@ $use-seo = hexo-config('seo');
   box-shadow: $box-shadow-inner;
 
   // Adapt submenu(s) with post-blocks.
-  + #content > #posts {
-    .post-block {
-      box-shadow: $box-shadow;
-      margin-top: $sidebar-offset;
+  + .content .post-block {
+    box-shadow: $box-shadow;
+    margin-top: $sidebar-offset;
 
-      +tablet() {
-        margin-top: $content-tablet-padding;
-      }
+    +tablet() {
+      margin-top: $content-tablet-padding;
+    }
 
-      +mobile() {
-        margin-top: $content-mobile-padding;
-      }
+    +mobile() {
+      margin-top: $content-mobile-padding;
     }
   }
 }
@@ -163,8 +149,6 @@ $use-seo = hexo-config('seo');
   }
 
   .posts-expand {
-    margin: initial;
-
     // Components inside Posts.
     .post-button {
       margin-top: ($content-tablet-padding * 2);
@@ -180,10 +164,8 @@ $use-seo = hexo-config('seo');
   }
 
   // Only if blocks are siblings need bottom margin (homepage).
-  #posts > article + article {
-    .post-block {
-      margin-top: $content-tablet-padding;
-    }
+  .post-block + .post-block {
+    margin-top: $content-tablet-padding;
   }
 
   .comments {
@@ -208,8 +190,6 @@ $use-seo = hexo-config('seo');
   }
 
   .posts-expand {
-    margin: initial;
-
     // Components inside Posts.
     .post-button {
       margin: $sidebar-offset 0;
@@ -226,10 +206,8 @@ $use-seo = hexo-config('seo');
   }
 
   // Only if blocks are siblings need bottom margin (homepage).
-  #posts > article + article {
-    .post-block {
-      margin-top: $content-mobile-padding;
-    }
+  .post-block + .post-block {
+    margin-top: $content-mobile-padding;
   }
 
   .comments {

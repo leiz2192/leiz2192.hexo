@@ -4,16 +4,15 @@
   line-height: 1.4;
   margin-top: 10px;
   overflow: hidden;
-  text-align: $site-state-align;
+  text-align: center;
   white-space: nowrap;
 }
 
 .site-state-item {
-  border-left: 1px solid $site-state-item-border-color;
   padding: 0 15px;
 
-  &:first-child {
-    border-left: none;
+  &:not(:first-child) {
+    border-left: 1px solid $site-state-item-border-color;
   }
 
   a {
@@ -22,10 +21,9 @@
 }
 
 .site-state-item-count {
-  color: $site-state-item-count-color;
   display: block;
   font-size: $site-state-item-count-font-size;
-  font-weight: $font-weight-bold;
+  font-weight: 600;
   text-align: center;
 }
 

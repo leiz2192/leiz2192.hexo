@@ -8,15 +8,17 @@
   width: $content-desktop;
 
   +desktop-large() {
-    .container & {
-      width: $content-desktop-large;
-    }
+    width: $content-desktop-large;
   }
 
   +desktop-largest() {
-    .container & {
-      width: $content-desktop-largest;
-    }
+    width: $content-desktop-largest;
+  }
+}
+
+.content-wrap {
+  +mobile() {
+    padding: 0 20px;
   }
 }
 
