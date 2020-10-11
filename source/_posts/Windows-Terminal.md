@@ -12,6 +12,7 @@ categories: 工具
 我的配置如下。其中guid自定义，确保其唯一性和格式正确行即可；commandline修改为实际安装路径，其中我的Cygwin64配置是以zsh启动。
 <!--more-->
 Git Bash设置：
+
 ```json
 {
     "guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6109}",
@@ -23,6 +24,7 @@ Git Bash设置：
 ```
 
 Cygwin64设置：
+
 ```json
 {
     "guid" : "{0caa0dad-35be-5f56-35be-0a998ec441b8}",
@@ -34,6 +36,7 @@ Cygwin64设置：
 ```
 
 应用于所有配置文件的设置：
+
 ```json
 {
     // Put settings here that you want to apply to all profiles.
