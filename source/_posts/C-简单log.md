@@ -61,3 +61,5 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 ```
+
+> INFO中之所以先ostringstream再cout，是由于msg中有可能会存在函数调用，是函数调用先执行后再cout。
