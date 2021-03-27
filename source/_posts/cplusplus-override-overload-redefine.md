@@ -1,8 +1,8 @@
 ---
 title: C++函数重载和函数重写
 date: 2020-12-05 22:44:41
-tags:
-categories:
+tags: 重载
+categories: c++
 ---
 
 ## 基本概念

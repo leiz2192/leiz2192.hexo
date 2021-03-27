@@ -42,10 +42,10 @@ set laststatus=2 " 显示状态栏 (默认值为 1, 无法显示状态栏)
 
 " 设置在状态行显示的信息
 set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ %c:%l/%L%)\
-set foldenable " 开始折叠
-set foldmethod=syntax " 设置语法折叠
-set foldcolumn=0 " 设置折叠区域的宽度
-setlocal foldlevel=1 " 设置折叠层数为
+" set foldenable " 开始折叠
+" set foldmethod=syntax " 设置语法折叠
+" set foldcolumn=0 " 设置折叠区域的宽度
+" setlocal foldlevel=1 " 设置折叠层数为
 
 " 中文显示
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
@@ -57,4 +57,6 @@ set expandtab
 
 noremap <Space> *N
 noremap <C-\> :q!<CR>
+
+highlight CursorLine   cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
 ```
