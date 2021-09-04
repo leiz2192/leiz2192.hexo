@@ -1,8 +1,8 @@
 ---
 title: 基于Python的简单FTP服务器
 date: 2020-11-21 18:20:46
-tags:
-categories:
+tags: PySimpleGUI
+categories: Python
 ---
 
 代码见[GitHub](https://github.com/leiz2192/Python/tree/master/PyFtpServer)。

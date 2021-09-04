@@ -25,7 +25,7 @@ categories: c++
 ### 重定义redefine
 
 指子类重新定义父类中的非虚函数（`参数列表可以不同`），这样父类中的对应函数将被隐藏。
-
+<!--more-->
 比如以下程序编译时提示`error: no matching function for call to ‘B::func(int)’`
 
 ```c++
