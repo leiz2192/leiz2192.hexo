@@ -9,7 +9,7 @@ categories: Python
 
 利用 [PySimpleGUI](https://pysimplegui.readthedocs.io/en/latest/) 和 [pygame](https://www.pygame.org/docs/)  写的一个小工具，用于番茄计时。
 
-![looks-like](/images/20210905T225045.549.png)
+![looks-like](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20210905T225045.549-20250502183555-jti51yi.png)
 
 - 记录运行和中断的次数
 - 倒计时可通过配置文件 "PyTomato.json" 配置，单位为秒

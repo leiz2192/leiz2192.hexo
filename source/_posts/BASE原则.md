@@ -15,4 +15,4 @@ BASE是NoSQL数据库通常对可用性及一致性的弱要求原则:
 - Soft-state: 软状态/柔性事务。 "Soft state" 可以理解为"无连接"的, 而 "Hard state" 是"面向连接"的
 - Eventual Consistency: 最终一致性, 也是 ACID 的最终目的
 
-![acid_base](/images/2019-11-04T23-58-38.png)
+![2019-11-04T23-58-38](https://raw.githubusercontent.com/leiz2192/myblogimages/main/2019-11-04T23-58-38.png)

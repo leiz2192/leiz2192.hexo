@@ -9,11 +9,12 @@ categories: c++
 
 - 从VS2019选择和创建CMake项目。
 <!--more-->
-![select](/images/20200614T215958.440.png)
-![create](/images/20200614T220154.311.png)
+![20200614T215958.440](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20200614T215958.440.png)
+
+![20200614T220154.311](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20200614T220154.311.png)
 
 - 将下载的gtest源码解压到项目目录下。
-![srczip](/images/20200614T222711.295.png)
+![20200614T222711.295](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20200614T222711.295.png)
 
 - 修改项目的CMakeLists.txt文件如下。
 
@@ -33,7 +34,7 @@ categories: c++
     ```
 
 - 在项目的CMake设置中将“gtest_force_shared_crt”设置为True。注意需要“显示高级设置”和“显示高级变量”。不然编译会存在问题。原因是gtest默认是静态编译，与VS项目设置不一致。
-![shared](/images/20200614T224131.819.png)
+![20200614T224131.819](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20200614T224131.819.png)
 
 - 修改项目代码文件。
 
@@ -64,4 +65,4 @@ categories: c++
     ```
 
 - 全部生成并开始执行。后续添加需要测试用例和修改CMakeLists.txt即可。
-![makerun](/images/20200614T225131.721.png)
+![20200614T225131.721](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20200614T225131.721.png)

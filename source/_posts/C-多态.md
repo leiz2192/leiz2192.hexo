@@ -43,13 +43,14 @@ C++支持两种多态性：
     * 如果这个对象是 子类的对象，那么vptr指针就会在 子类的 虚函数表中查找被调用的函数
     * 如果这个对象是 父类的对象，那么vptr指针就会在 父类的 虚函数表中查找被调用的函数
 
-![image.png](/images/20220204T005410.067.png)
 
-![image.png](/images/20220204T005855.002.png)
+![20220204T005410.067](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20220204T005410.067.png)
 
-![image.png](/images/20220204T010218.310.png)
+![20220204T005855.002](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20220204T005855.002.png)
 
-![image.png](/images/20220204T010241.334.png)
+![20220204T010218.310](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20220204T010218.310.png)
+
+![20220204T010241.334](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20220204T010241.334.png)
 
 由于虚函数的存在，在实例化类对象时，就会产生1个 vptr指针。这样，在普通的类中，类的大小 == 成员变量的大小；在有虚函数的类中，类的大小 == 成员变量的大小 + vptr指针大小。
 

@@ -29,15 +29,15 @@ categories: 工具
 > 安装`Paste Image`在`VS Code`的应用商店中搜索安装即可. 另外 Linux 环境可能会提示安装`xclip`, 比如`sudo aptitude install xclip`.
 
 - 配置基本路径. 图片的链接路径中不体现的路径信息. 比如 VS Code 打开是 Hexo 的工程, 图片是存在`source/images`中, 则配置`${projectRoot}/source`.
-![base-path](/images/20191109T004150.933.png)
+![20191109T004150.933](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20191109T004150.933.png)
 
 - 配置图片文件名格式. 名称是由时间组成的, 但格式可自定义.
-![file-name](/images/20191109T005128.154.png)
+![20191109T005128.154](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20191109T005128.154.png)
 
 - 配置图片保存路径.
-![paste-path](/images/20191109T005753.953.png)
+![20191109T005753.953](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20191109T005753.953.png)
 
 - 配置图片链接前缀. 如果图片保存在`source/images`中, 图片链接路径最前面需要`/`.
-![paste-prefix](/images/20191109T005926.235.png)
+![20191109T005926.235](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20191109T005926.235.png)
 
 按照上述配置以后, 截图保存到剪贴板后, 直接在博文中`Ctrl+Alt+V`(不同系统快捷键可能存在差异), 图片就自动保存到指定路径, 博文中自动生成了图片的访问地址.

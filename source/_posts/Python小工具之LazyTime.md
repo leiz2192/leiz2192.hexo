@@ -10,7 +10,8 @@ categories: Python
 利用 [PySimpleGUI](https://pysimplegui.readthedocs.io/en/latest/) 和 [Borax.Calendars](https://gitee.com/kinegratii/borax)  写的一个小工具，用于显示日期、时间、星期和农历信息。
 
 Win10运行参考界面如下，可拖拽，双击鼠标关闭。
-![win10](/images/20210905T004807.858.png)
+
+![win10](https://raw.githubusercontent.com/leiz2192/myblogimages/main/20210905T004807.858-20250502184703-80gigsm.png)
 
 
 时间信息获取方式：
