@@ -1,7 +1,7 @@
 ---
 title: C++简单log
 date: 2020-10-11 15:37:42
-tags: loging
+tags: log
 categories: c++
 ---
 
