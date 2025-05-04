@@ -75,7 +75,7 @@ footer:
 # 社交链接
 socialLink:
   - name: Email
-    link: zhanglei2192@hotmail.com
+    link: mailto:zhanglei2192@hotmail.com
   - name: GitHub
     link: https://github.com/leiz2192
 
@@ -85,4 +85,3 @@ primaryColor: '#10b981'
 # 目录
 tableOfContents:
   enable: true
-
